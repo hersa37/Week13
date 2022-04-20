@@ -3,7 +3,7 @@
  *  Do not use without permission
  */
 
-package pb0.week09;
+package pb0.week10;
 
 /**
  *
@@ -12,15 +12,17 @@ package pb0.week09;
 public class TesPegawai {
 
     public static void main(String[] args) {
-        
+        int gaji=15000000;
         Manajer manajer=new Manajer("Olive");
-        manajer.setGaji(15000000, 5000000);
+        manajer.setGaji(gaji);
+        manajer.setTunjangan(15000000);
         
         Sales sales=new Sales("Popeye");
-        sales.setGaji(5000000, 2000);
+        sales.setGaji(gaji);
+        sales.setSales(15);
         
         Sekretaris sekretaris=new Sekretaris("Rocket");
-        sekretaris.setGaji(4000000);
+        sekretaris.setGaji(gaji);
         
         System.out.println(manajer);
         System.out.println(sales);

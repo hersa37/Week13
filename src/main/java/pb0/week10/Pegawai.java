@@ -3,7 +3,7 @@
  *  Do not use without permission
  */
 
-package pb0.week09;
+package pb0.week10;
 
 /**
  *
@@ -13,10 +13,10 @@ package pb0.week09;
  */
 public class Pegawai {
     
-    private String employeeID;
-    private static String uniqueID="0"; 
-    private String name;
-    private int gaji;
+    protected String employeeID;
+    protected static String uniqueID="0"; 
+    protected String name;
+    protected int gaji;
     
     public Pegawai(){
         this("");

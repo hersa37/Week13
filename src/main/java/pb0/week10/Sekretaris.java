@@ -3,7 +3,7 @@
  *  Do not use without permission
  */
 
-package pb0.week09;
+package pb0.week10;
 
 /**
  *
@@ -11,18 +11,16 @@ package pb0.week09;
  * Bernardus Hersa Galih Prakoso - 215314018
  * Informatika - Universitas Sanata Dharma
  */
-public class Manajer extends Pegawai{
-    
-    public Manajer(){
+public class Sekretaris extends Pegawai{
+
+    public Sekretaris() {
         super();
     }
     
-    public Manajer(String name){
+    public Sekretaris(String name){
         super(name);
     }
     
-    public void setGaji(int pokok, int tunjangan){
-        super.setGaji(pokok+tunjangan);
-    }
-
+    
+    
 }
