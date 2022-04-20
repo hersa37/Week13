@@ -12,6 +12,7 @@ package pb0.week10;
  * Informatika - Universitas Sanata Dharma
  */
 public class Sales extends Pegawai {
+    private final int KOMISI=10000;
     private int sales;
     
     public Sales(){
@@ -29,9 +30,8 @@ public class Sales extends Pegawai {
     public void setSales(int sales) {
         this.sales=sales;
     }
-        
-    @Override
+    
     public int getGaji(){
-        return gaji+(sales*10000);
+        return gajiPokok+(sales*KOMISI);
     }
 }

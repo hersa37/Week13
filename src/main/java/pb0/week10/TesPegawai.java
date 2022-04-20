@@ -14,15 +14,15 @@ public class TesPegawai {
     public static void main(String[] args) {
         int gaji=15000000;
         Manajer manajer=new Manajer("Olive");
-        manajer.setGaji(gaji);
+        manajer.setGajiPokok(gaji);
         manajer.setTunjangan(15000000);
         
         Sales sales=new Sales("Popeye");
-        sales.setGaji(gaji);
+        sales.setGajiPokok(gaji);
         sales.setSales(15);
         
         Sekretaris sekretaris=new Sekretaris("Rocket");
-        sekretaris.setGaji(gaji);
+        sekretaris.setGajiPokok(gaji);
         
         System.out.println(manajer);
         System.out.println(sales);

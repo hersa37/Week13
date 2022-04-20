@@ -13,34 +13,34 @@ package pb0.week10;
  */
 public class Pegawai {
     
-    protected String employeeID;
+    protected String pegawaiID;
     protected static String uniqueID="0"; 
-    protected String name;
-    protected int gaji;
+    protected String nama;
+    protected int gajiPokok;
     
     public Pegawai(){
         this("");
     }
     
-    public Pegawai(String name){
-        employeeID=Pegawai.getUniqueID();
-        this.name=name;
+    public Pegawai(String nama){
+        pegawaiID=Pegawai.getUniqueID();
+        this.nama=nama;
     }
         
-    public String getEmployeeID() {
-        return employeeID;
+    public String getPegawaiID() {
+        return pegawaiID;
     }
 
-    public void setEmployeeID(String employeeID) {
-        this.employeeID = String.format("%4s", employeeID);
+    public void setPegawaiID(String pegawaiID) {
+        this.pegawaiID = String.format("%4s", pegawaiID);
     }
     
     public void setUniqueID(int uniqueID){
         Pegawai.uniqueID=String.valueOf(uniqueID);
     }
     
-    public String getName() {
-        return name;
+    public String getNama() {
+        return nama;
     }
     
     /*
@@ -52,19 +52,19 @@ public class Pegawai {
         return uniqueID;
     }
 
-    public int getGaji() {
-        return gaji;
+    public int getGajiPokok() {
+        return gajiPokok;
     }
 
-    public void setGaji(int gaji) {
-        this.gaji = gaji;
+    public void setGajiPokok(int gajiPokok) {
+        this.gajiPokok = gajiPokok;
     }
     
     @Override
     public String toString(){
-        return "{ID: "+getEmployeeID()
-                +"; Name: "+getName()
-                +"; Gaji: "+getGaji()
+        return "{ID: "+getPegawaiID()
+                +"; Name: "+getNama()
+                +"; Gaji Pokok: "+getGajiPokok()
                 +"}";
     }
 }

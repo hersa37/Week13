@@ -30,8 +30,7 @@ public class Manajer extends Pegawai{
         this.tunjangan=tunjangan;
     }    
     
-    @Override
     public int getGaji(){
-        return gaji+tunjangan;
+        return gajiPokok+tunjangan;
     }
 }
