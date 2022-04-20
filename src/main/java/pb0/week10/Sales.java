@@ -12,8 +12,8 @@ package pb0.week10;
  * Informatika - Universitas Sanata Dharma
  */
 public class Sales extends Pegawai {
-    private final int KOMISI=10000;
-    private int sales;
+    private final int KOMISI_PER_BARANG=10000;
+    private int jumlahBarang;
     
     public Sales(){
         super();
@@ -23,15 +23,19 @@ public class Sales extends Pegawai {
         super(name);
     }
 
-    public int getSales() {
-        return sales;
+    public int getJumlahBarang() {
+        return jumlahBarang;
     }
 
-    public void setSales(int sales) {
-        this.sales=sales;
+    public void setJumlahBarang(int jumlahBarang) {
+        this.jumlahBarang=jumlahBarang;
+    }
+    
+    public int getKomisi(){
+        return jumlahBarang*KOMISI_PER_BARANG;
     }
     
     public int getGaji(){
-        return gajiPokok+(sales*KOMISI);
+        return gajiPokok+(getKomisi());
     }
 }

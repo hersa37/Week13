@@ -19,7 +19,7 @@ public class TesPegawai {
         
         Sales sales=new Sales("Popeye");
         sales.setGajiPokok(gaji);
-        sales.setSales(15);
+        sales.setJumlahBarang(15);
         
         Sekretaris sekretaris=new Sekretaris("Rocket");
         sekretaris.setGajiPokok(gaji);

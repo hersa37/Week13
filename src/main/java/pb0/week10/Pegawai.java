@@ -13,9 +13,9 @@ package pb0.week10;
  */
 public class Pegawai {
     
-    protected String pegawaiID;
-    protected static String uniqueID="0"; 
-    protected String nama;
+    private String pegawaiID;
+    private static String uniqueID="0"; 
+    private String nama;
     protected int gajiPokok;
     
     public Pegawai(){
