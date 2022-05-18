@@ -116,12 +116,6 @@ public class KantorCabang {
     }
     @Override
     public String toString(){
-        String print="{";
-        for(int i=0;i<jumlahPegawai;i++){
-            print+="Pegawai: "+pegawai[i].getNama()
-                    +"; Gaji: "+pegawai[i].getGajiTotal()+"\n";
-        }
-        print+="} ";
-        return print;
+        return "Kode Kantor Cabang: "+kodeCabang;
     }  
 }

@@ -30,15 +30,21 @@ public class KanCabMain {
 
         KantorCabang kanCab=new KantorCabang("KC0001",daftarPegawai,jumlahPegawai);
 
-        Locale locale = new Locale("id", "ID");
-        NumberFormat format = NumberFormat.getCurrencyInstance(locale);
+        System.out.println(kanCab);
+        cetakGajiTotalSetiapPegawai(kanCab);
+    }
 
+    public static void cetakGajiTotalSetiapPegawai(KantorCabang kantorCabang){
         String manajerString="Manager\n";
         String salesString="Sales\n";
         String sekretarisString="Sekretaris\n";
 
+        Pegawai[] daftarPegawai= kantorCabang.getPegawai();
 
-        for(int i=0; i<kanCab.getJumlahPegawai();i++){
+        Locale locale = new Locale("id", "ID");
+        NumberFormat format = NumberFormat.getCurrencyInstance(locale);
+
+        for(int i=0; i<kantorCabang.getJumlahPegawai();i++){
             if (daftarPegawai[i] instanceof Manajer) {
                 manajerString += daftarPegawai[i].toString() + ", dengan gaji total: " + format.format(daftarPegawai[i].getGajiTotal())+"\n";
             }
@@ -49,9 +55,11 @@ public class KanCabMain {
                 sekretarisString += daftarPegawai[i].toString() + ", dengan gaji total: " + format.format(daftarPegawai[i].getGajiTotal())+"\n";
             }
         }
+
+
         System.out.println("Daftar Pegawai:");
         System.out.println(manajerString);
-        System.out.println(salesString);
         System.out.println(sekretarisString);
+        System.out.println(salesString);
     }
 }
