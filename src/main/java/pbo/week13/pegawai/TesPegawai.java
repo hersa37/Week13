@@ -5,6 +5,7 @@
 
 package pbo.week13.pegawai;
 
+import java.sql.SQLOutput;
 import java.text.NumberFormat;
 import java.util.Locale;
 
@@ -50,6 +51,7 @@ public class TesPegawai {
                 sekretarisString += daftarPegawai[i].toString() + ", dengan gaji total: " + format.format(daftarPegawai[i].getGajiTotal())+"\n";
             }
         }
+
         System.out.println("Daftar Pegawai:");
         System.out.println(manajerString);
         System.out.println(salesString);

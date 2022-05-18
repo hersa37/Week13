@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b047c9f2-e33e-4784-b63b-abf1151465e9" name="Changes" comment="Init" />
+    <list default="true" id="b047c9f2-e33e-4784-b63b-abf1151465e9" name="Changes" comment="Init">
+      <change beforePath="$PROJECT_DIR$/src/main/java/pbo/week13/kancab/KanCabMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pbo/week13/kancab/KanCabMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pbo/week13/pegawai/TesPegawai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pbo/week13/pegawai/TesPegawai.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,7 +112,7 @@
       <workItem from="1650971355523" duration="1162000" />
       <workItem from="1652846337923" duration="2458000" />
       <workItem from="1652853627912" duration="1905000" />
-      <workItem from="1652856297294" duration="2534000" />
+      <workItem from="1652856297294" duration="3044000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1652858627488</created>
@@ -125,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652858637882</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Init">
+      <created>1652858845654</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1652858845654</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
