@@ -3,7 +3,7 @@
  *  Do not use without permission
  */
 
-package pb0.week10;
+package pbo.week13.pegawai;
 
 /**
  *
@@ -12,25 +12,26 @@ package pb0.week10;
  * Informatika - Universitas Sanata Dharma
  */
 public class Manajer extends Pegawai{
-    private int tunjangan;
+    private double tunjangan;
     
     public Manajer(){
         super();
     }
     
-    public Manajer(String name){
-        super(name);
+    public Manajer(String nama, String pegawaiID){
+        super(nama, pegawaiID);
     }
 
-    public int getTunjangan() {
+    public double getTunjangan() {
         return tunjangan;
     }
 
-    public void setTunjangan(int tunjangan) {
+    public void setTunjangan(double tunjangan) {
         this.tunjangan=tunjangan;
     }    
     
-    public int getGaji(){
+    public double getGajiTotal(){
         return gajiPokok+tunjangan;
     }
+    
 }

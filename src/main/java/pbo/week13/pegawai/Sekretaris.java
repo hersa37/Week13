@@ -3,7 +3,7 @@
  *  Do not use without permission
  */
 
-package pb0.week10;
+package pbo.week13.pegawai;
 
 /**
  *
@@ -17,10 +17,12 @@ public class Sekretaris extends Pegawai{
         super();
     }
     
-    public Sekretaris(String name){
-        super(name);
+    public Sekretaris(String name, String pegawaiID){
+        super(name, pegawaiID);
     }
     
-    
+    public double getGajiTotal(){
+        return getGajiPokok();
+    }
     
 }

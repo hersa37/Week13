@@ -3,7 +3,7 @@
  *  Do not use without permission
  */
 
-package pb0.week10;
+package pbo.week13.pegawai;
 
 /**
  *
@@ -12,15 +12,15 @@ package pb0.week10;
  * Informatika - Universitas Sanata Dharma
  */
 public class Sales extends Pegawai {
-    private final int KOMISI_PER_BARANG=10000;
+    public static final double KOMISI_PER_BARANG=10000;
     private int jumlahBarang;
     
     public Sales(){
         super();
     }
     
-    public Sales(String name){
-        super(name);
+    public Sales(String nama, String pegawaiID){
+        super(nama, pegawaiID);
     }
 
     public int getJumlahBarang() {
@@ -31,11 +31,11 @@ public class Sales extends Pegawai {
         this.jumlahBarang=jumlahBarang;
     }
     
-    public int getKomisi(){
-        return jumlahBarang*KOMISI_PER_BARANG;
+    public double getKomisi(){
+        return jumlahBarang*Sales.KOMISI_PER_BARANG;
     }
     
-    public int getGaji(){
-        return gajiPokok+(getKomisi());
+    public double getGajiTotal(){
+        return gajiPokok+(Sales.KOMISI_PER_BARANG*jumlahBarang);
     }
 }
