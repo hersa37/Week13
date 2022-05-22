@@ -6,7 +6,13 @@
 package pbo.week13.kancab;
 
 
+import pbo.week13.pegawai.Manajer;
 import pbo.week13.pegawai.Pegawai;
+import pbo.week13.pegawai.Sales;
+import pbo.week13.pegawai.Sekretaris;
+
+import java.text.NumberFormat;
+import java.util.Locale;
 
 /**
  *
@@ -113,6 +119,31 @@ public class KantorCabang {
         }
         System.out.println("Pegawai not found");
         return null;
+    }
+    public  String cetakGajiTotalSetiapPegawai(){
+        String manajerString="Manager\n";
+        String salesString="Sales\n";
+        String sekretarisString="Sekretaris\n";
+
+        Locale locale = new Locale("id", "ID");
+        NumberFormat format = NumberFormat.getCurrencyInstance(locale);
+
+        for(int i=0; i<jumlahPegawai;i++){
+            if (pegawai[i] instanceof Manajer) {
+                manajerString += pegawai[i].toString() + ", dengan gaji total: " + format.format(pegawai[i].getGajiTotal())+"\n";
+            }
+            if (pegawai[i] instanceof Sales) {
+                salesString += pegawai[i].toString() + ", dengan gaji total: " + format.format(pegawai[i].getGajiTotal())+"\n";
+            }
+            if (pegawai[i] instanceof Sekretaris) {
+                sekretarisString += pegawai[i].toString() + ", dengan gaji total: " + format.format(pegawai[i].getGajiTotal())+"\n";
+            }
+        }
+
+        return "Daftar gaji pegawai:\n"
+                +manajerString+"\n"
+                +sekretarisString+"\n"
+                +salesString+"\n";
     }
     @Override
     public String toString(){
